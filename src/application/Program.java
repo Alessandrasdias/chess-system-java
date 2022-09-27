@@ -1,7 +1,6 @@
 package application;
 
-import boardgame.Board;
-import boardgame.Position;
+import chess.ChessMatch;
 
 public class Program {
 
@@ -10,9 +9,16 @@ public class Program {
 		Position test = new Position (4, 6);
 		System.out.println(test);*/
 		
-		/*testing Board*/
+		/*testing Board
 		Board test = new Board (8, 8);
-		System.out.println(test);
+		System.out.println(test);*/
+		
+		//testing chessboard on a match
+		
+		ChessMatch chessMatch = new ChessMatch();
+		//func to print pieces
+		UI.printBoard(chessMatch.getpieces());
+		
 		
 	}
 
