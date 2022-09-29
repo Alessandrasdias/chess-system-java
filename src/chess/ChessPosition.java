@@ -29,7 +29,7 @@ public class ChessPosition {
 	
 	protected static ChessPosition fromPosition(Position position) {
 		//converting regular matrix to a chess position
-		return new ChessPosition((char)('a' - position.getColumn()), 8 - position.getRow());
+		return new ChessPosition((char)('a' + position.getColumn()), 8 - position.getRow());
 	}
 	
 	@Override
